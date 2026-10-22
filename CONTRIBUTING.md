@@ -4,7 +4,7 @@ Thank you for your interest. We welcome questions, bug reports and proposals. We
 
 ## How to take part
 
-1. **Ask a question.** Use [Discussions](https://github.com/gramatr/.github/discussions): how a guard behaves, what it does and does not catch, how to configure it.
+1. **Ask a question.** Use [Discussions](https://github.com/orgs/gramatr/discussions): how a guard behaves, what it does and does not catch, how to configure it.
 2. **Report a bug.** Open an issue with the bug report form. Give the version and a description of the shape of the input, with a fabricated value.
 3. **Propose a change.** Open an issue with the proposal form, and wait for it to be marked `accepted`. Write code only after that. A pull request that does not link to an accepted proposal is closed.
 4. **Report a security problem, privately.** Use the Security tab of the repository and choose Report a vulnerability. See [SECURITY.md](SECURITY.md). Never describe a vulnerability in a public place.
