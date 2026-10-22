@@ -29,7 +29,7 @@ The guards are a protection layer: an inference layer that detects secrets, pers
 
 ### Contributing and security
 
-Questions are welcome in [Discussions](https://github.com/orgs/gramatr/discussions), and bug reports and proposals as issues. We review code only for changes we agreed to beforehand: propose first, as described in the [contributing guide](https://github.com/gramatr/.github/blob/main/CONTRIBUTING.md). If you find a security problem, please report it privately through the **Security** tab of the repository (Report a vulnerability); see our [security policy](https://github.com/gramatr/.github/blob/main/SECURITY.md).
+Questions are welcome in [Discussions](https://github.com/gramatr/.github/discussions), and bug reports and proposals as issues. We review code only for changes we agreed to beforehand: propose first, as described in the [contributing guide](https://github.com/gramatr/.github/blob/main/CONTRIBUTING.md). If you find a security problem, please report it privately through the **Security** tab of the repository (Report a vulnerability); see our [security policy](https://github.com/gramatr/.github/blob/main/SECURITY.md).
 
 ## More
 
