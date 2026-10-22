@@ -1,0 +1,66 @@
+name: Bug report
+description: Something behaves differently from what the documentation says
+title: "[bug] "
+labels: ["needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste a real credential, token, key or personal data into this form, not even a rotated or expired one.** Describe its shape instead (length, character classes, which tool produced it) and use a made-up value of the same shape. A public issue is readable by everyone and by search engines.
+
+        **Security problems do not go here.** Use the Security tab of the repository and choose Report a vulnerability. See the [security policy](https://github.com/gramatr/.github/blob/main/SECURITY.md).
+
+        These projects are small on purpose. Reports about behaviour that the documentation says is covered are the most useful. Requests for organisation-wide policy, audit or review are out of scope here.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - guards-unified (the server image)
+        - claude-plugin-guards (the Claude Code plugin)
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release tag, or the contents of the VERSION file.
+    validations:
+      required: true
+  - type: dropdown
+    id: permission-mode
+    attributes:
+      label: Claude Code permission mode (plugin only)
+      options:
+        - default
+        - acceptEdits
+        - plan
+        - auto
+        - bypassPermissions
+        - dontAsk
+        - Not applicable
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What you expected and what happened
+      description: Use fabricated values with the same shape as the real ones. Say which behaviour or rule it exercises.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before you submit
+      options:
+        - label: This contains no real credential, token, key or personal data.
+          required: true
+        - label: This is not a security vulnerability (those go through the Security tab).
+          required: true
+        - label: I looked at the project's documentation, including its limits.
+          required: true

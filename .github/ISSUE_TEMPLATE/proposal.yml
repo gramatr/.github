@@ -1,0 +1,59 @@
+name: Proposal
+description: Propose a change before writing code
+title: "[proposal] "
+labels: ["needs-triage", "proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **We review code only for changes we agreed to beforehand.** Open a proposal first, and wait for it to be marked `accepted`. A pull request without an accepted proposal is closed.
+
+        **Never include a real credential, token, key or personal data.** Describe shapes only.
+
+        **What belongs here:** the hard rule is no secrets (redact them in output, block them in publishes and commits, deny credential files), fast and synchronous, plus honest best-effort notices for personal data and prompt injection. **What does not:** nuanced judgments, organisation-wide policy, audit and review. Those belong to the platform that adopts the guards.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - guards-unified (the server image)
+        - claude-plugin-guards (the Claude Code plugin)
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What goes wrong today, with a fabricated example of the shape involved.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: The change you propose
+    validations:
+      required: true
+  - type: textarea
+    id: cost
+    attributes:
+      label: What it costs and what it could break
+      description: Speed on the hot path, new ways to let something through, new settings.
+  - type: dropdown
+    id: implement
+    attributes:
+      label: Would you write it?
+      options:
+        - Yes, once the proposal is accepted
+        - No, I am proposing only
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before you submit
+      options:
+        - label: This contains no real credential, token, key or personal data.
+          required: true
+        - label: This is within the scope above and is not a request for organisation-wide policy, audit or review.
+          required: true
